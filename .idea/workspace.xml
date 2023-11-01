@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5ef9371a-d43c-4a6d-960e-04036d4bb9b9" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="ggw-web" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Yml File" />
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="29gZ53bHdvB7VwWTgvei5avHqvr" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="spring.boot" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ggw.controller" />
+      <recent name="com.ggw.aspect" />
+      <recent name="com.ggw.config" />
+      <recent name="com.ggw.dto" />
+      <recent name="com.ggw.common.exception" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\website\ggw-web\src\main\java\com\ggw" />
+      <recent name="E:\website\ggw-web\src\main\resources" />
+      <recent name="E:\website\ggw-web\src\main\java\com\ggw\common" />
+      <recent name="E:\website\ggw-web\src\main\java\com\ggw\constant" />
+      <recent name="E:\website\ggw-web\src\main\java\com\ggw\common\exception" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="CaptchaFilter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ggw.security.CaptchaFilter" />
+      <module name="ggw-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ggw.security.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CodeGenerator (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ggw.config.CodeGenerator" />
+      <module name="ggw-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ggw.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CodeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yuwen.spring.uitl.generate.CodeGenerator" />
+      <module name="ggw-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yuwen.spring.uitl.generate.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CodeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ggw.config.CodeGenerator" />
+      <module name="ggw-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ggw.security.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReflectUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ggw.util.ReflectUtils" />
+      <module name="ggw-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ggw.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDetailsServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ggw.service.impl.UserDetailsServiceImpl" />
+      <module name="ggw-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ggw.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GgwWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ggw-web" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ggw.GgwWebApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5ef9371a-d43c-4a6d-960e-04036d4bb9b9" name="Default Changelist" comment="" />
+      <created>1653536502585</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1653536502585</updated>
+      <workItem from="1653536506071" duration="16285000" />
+      <workItem from="1653720838299" duration="76193000" />
+      <workItem from="1654055215858" duration="102197000" />
+      <workItem from="1655178136128" duration="19000" />
+      <workItem from="1655795922726" duration="3177000" />
+      <workItem from="1655888397394" duration="46000" />
+      <workItem from="1655952532855" duration="2596000" />
+      <workItem from="1656032125459" duration="776000" />
+      <workItem from="1657705856921" duration="445000" />
+      <workItem from="1667909179337" duration="28000" />
+      <workItem from="1668835578208" duration="34000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="377" y="117" width="782" height="600" key="find.popup" timestamp="1668835596974">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="377" y="117" width="782" height="600" key="find.popup/0.0.1536.834@0.0.1536.834" timestamp="1668835596974" />
+  </component>
+</project>

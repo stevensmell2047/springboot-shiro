@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Maven: org.postgresql:postgresql:42.3.5">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/postgresql/postgresql/42.3.5/postgresql-42.3.5.jar!/" />
+    </CLASSES>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/postgresql/postgresql/42.3.5/postgresql-42.3.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

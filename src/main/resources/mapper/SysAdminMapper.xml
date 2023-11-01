@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ggw.dao.SysAdminMapper">
+  <resultMap id="BaseResultMap" type="com.ggw.entity.SysAdmin">
+    <id column="id" property="id"/>
+    <result column="username" property="username"/>
+    <result column="password" property="password"/>
+    <result column="phone" property="phone"/>
+    <result column="email" property="email"/>
+    <result column="job_num" property="jobNum"/>
+    <result column="address" property="address"/>
+    <result column="name" property="name"/>
+    <result column="sex" property="sex"/>
+    <result column="status" property="status"/>
+    <result column="create_time" property="createTime"/>
+    <result column="creator" property="creator"/>
+    <result column="update_time" property="updateTime"/>
+    <result column="last_update" property="lastUpdate"/>
+  </resultMap>
+  <resultMap id="SysAdminDtoMap" type="com.ggw.dto.SysAdminDto" extends="BaseResultMap">
+    <result column="department_id" property="departmentId"/>
+    <result column="department" property="department"/>
+    <result column="position_id" property="positionId"/>
+    <result column="position" property="position"/>
+    <result column="roles" property="roles"/>
+  </resultMap>
+  <select id="getUserInfo" parameterType="map" resultMap="SysAdminDtoMap">
+    select ur.id,ur.username,ur.phone,ur.email,ur.job_num,ur.address,ur.name,ur.sex,
+    ur.status,ur.create_time,ur.creator,ur.update_time,ur.last_update,dp.id as department_id,dp.name as department,ps.id as position_id,ps.name as position
+
+            from (select * from gw_sys_admin where id= #{userId})as ur
+        left join gw_sys_user_to_position as po
+        on ur.id=po.admin_id
+        left join gw_sys_position as ps
+        on ps.id=po.position_id
+        left join gw_sys_user_to_department as de
+        on ur.id=de.admin_id
+        left join gw_sys_department as dp
+        on de.dep_id=dp.id
+  </select>
+  <select id="getUserList" parameterType="map" resultMap="SysAdminDtoMap">
+    select *,dm.name as department,pn.name as position,
+    (select string_agg(name,',') from gw_sys_user_to_role as ro
+    left join gw_sys_role as rl
+    on ro.role_id=rl.id
+    where admin_id=ur.id) as roles
+    from (
+    select sa.id,sa.username,sa.phone,sa.email,sa.job_num,sa.address,sa.name,sa.sex,
+    sa.status,sa.create_time,sa.creator,sa.update_time,sa.last_update
+    from gw_sys_admin as sa
+    <if test='depId!=null'>
+      left join gw_sys_user_to_department as de
+      on sa.id=de.admin_id
+    </if>
+    <if test='positionId!=null'>
+      left join gw_sys_user_to_position as de
+      on sa.id=de.admin_id
+    </if>
+    <if test='department!=null'>
+      left join gw_sys_user_to_department as de
+      on sa.id=de.admin_id
+      left join gw_sys_department as po
+      on po.id=de.dep_id
+    </if>
+    <if test='position!=null'>
+      left join gw_sys_user_to_position as de
+      on sa.id=de.admin_id
+      left join gw_sys_position as po
+      on po.id=de.position_id
+    </if>
+    where 1=1
+    <if test='depId!=null'>
+      and de.dep_id = ${depId}
+    </if>
+    <if test='positionId!=null'>
+      and de.position_id = ${positionId}
+    </if>
+    <if test='username!=null'>
+      and sa.username like CONCAT('%',#{username},'%')
+    </if>
+    <if test='name!=null'>
+      and sa.name like CONCAT('%',#{name},'%')
+    </if>
+    <if test='position!=null'>
+      and po.name like CONCAT('%',#{position},'%')
+    </if>
+    <if test='department!=null'>
+      and po.name like CONCAT('%',#{department},'%')
+    </if>
+    <if test='address!=null'>
+      and sa.address like CONCAT('%',#{address},'%')
+    </if>
+    <if test='phone!=null'>
+      and sa.phone like CONCAT('%',#{phone},'%')
+    </if>
+    <if test='email!=null'>
+      and sa.email like CONCAT('%',#{email},'%')
+    </if>
+    order by #{orderName}
+    <if test='orderNum==0'>
+      asc
+    </if>
+    <if test='orderNum==1'>
+      desc
+    </if>
+    ) as ur
+    left join gw_sys_user_to_department as dt
+    on ur.id=dt.admin_id
+    left join gw_sys_department as dm
+    on dt.dep_id=dm.id
+    left join gw_sys_user_to_position as ps
+    on ur.id=ps.admin_id
+    left join gw_sys_position as pn
+    on ps.position_id=pn.id
+  </select>
+</mapper>
